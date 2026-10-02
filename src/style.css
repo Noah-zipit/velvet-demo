@@ -1,0 +1,29 @@
+html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #0a0612;
+  font-family: Georgia, 'Times New Roman', serif; -webkit-user-select: none; user-select: none; }
+#app, #app canvas { position: fixed; inset: 0; }
+#app canvas { display: block; touch-action: none; }
+
+/* ---------- 18+ gate ---------- */
+#gate { position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center;
+  background: rgba(6, 3, 12, 0.96); transition: opacity 0.5s ease; }
+#gate.hidden { opacity: 0; pointer-events: none; }
+#gate .card { text-align: center; padding: 40px 48px; border: 1px solid #3a2440; border-radius: 14px;
+  background: #120b1c; max-width: 82vw; }
+#gate .age { font-size: 64px; color: #ff2d78; letter-spacing: 4px; margin-bottom: 12px; }
+#gate p { color: #cdbfda; font-size: 15px; line-height: 1.6; margin: 0 0 24px; }
+#gate button { font-family: inherit; font-size: 16px; color: #0a0612; background: #ff2d78; border: none;
+  border-radius: 999px; padding: 13px 34px; cursor: pointer; }
+#gate button:active { transform: scale(0.97); }
+
+/* ---------- HUD ---------- */
+#ui { position: fixed; inset: 0; z-index: 10; pointer-events: none; }
+#ui .title { position: absolute; top: 14px; left: 16px; color: #f3e9f5; font-size: 19px; letter-spacing: 5px; }
+#ui .title span { color: #8f7ba3; font-size: 12px; letter-spacing: 1px; }
+#ui .hint { position: absolute; bottom: 18px; left: 0; right: 0; text-align: center;
+  color: #6f5f82; font-size: 12px; letter-spacing: 2px; }
+#ui .pill { pointer-events: auto; position: absolute; bottom: 44px; left: 50%; transform: translateX(-50%);
+  font-family: inherit; font-size: 14px; letter-spacing: 2px; color: #cdbfda;
+  background: rgba(20, 12, 32, 0.72); border: 1px solid #4a3358; border-radius: 999px;
+  padding: 10px 26px; cursor: pointer; }
+#ui .pill.on { color: #ff7bab; border-color: #ff2d78; }
+#ui .pill:active { transform: translateX(-50%) scale(0.96); }
