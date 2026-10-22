@@ -16,5 +16,14 @@
   "dependencies": {
     "@types/three": "^0.186.0",
     "three": "^0.186.1"
-  }
+  },
+  "description": "VELVET \u2014 a real-time 3D character showcase rendered with Three.js and bundled with Vite.",
+  "author": "Ashar Qaisar",
+  "keywords": [
+    "three.js",
+    "vite",
+    "typescript",
+    "3d",
+    "character-demo"
+  ]
 }
